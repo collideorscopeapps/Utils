@@ -8,3 +8,4 @@ pause
 
 ::alternatively, just use imagemagick to make a pdf, then compress further the pdf on some free online tool.
 magick -verbose -compress jpeg *.jp2 doc.pdf
+:: if the file is too large for free online compression tools, use pdfsam to split by size

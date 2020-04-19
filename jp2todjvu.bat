@@ -5,3 +5,6 @@
 for %%X in (*.jp2) do convert "%%X" "%%X.pbm"
 minidjvu.exe -verbose -warnings *.pbm traiteelementair00dufo.djvu
 pause
+
+::alternatively, just use imagemagick to make a pdf, then compress further the pdf on some free online tool.
+magick -verbose -compress jpeg *.jp2 doc.pdf
